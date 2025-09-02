@@ -11,7 +11,6 @@ The process typically follows a simple flow:
 
 Compared to pip, **uv** is faster, more reliable in resolving dependencies, and includes lockfile support out of the box. This means fewer installation issues, consistent environments across machines, and a smoother workflow overall. In practice, uv feels like “pip without the headaches,” making it an excellent choice for starting and managing Python projects.  
 
-
 # Step 1 - Install uv (once)
 pip install uv
 
@@ -29,7 +28,3 @@ uv venv
 
 # Step 4 - Add the required dependencies (jupyterlab)
 uv add jupyterlab
-
-
-
-
