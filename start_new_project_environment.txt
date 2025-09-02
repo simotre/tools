@@ -1,0 +1,35 @@
+# Starting a New Python Project with uv
+
+When beginning a new Python project, it is best practice to work inside a dedicated virtual environment. This keeps dependencies isolated, avoids version conflicts, and makes the project easier to reproduce on other systems.
+
+The process typically follows a simple flow:  
+- Install uv once on your system.  
+- Initialize a new project and create a clean virtual environment.  
+- Activate the environment so Python and its tools run in isolation.  
+- Add the required dependencies for your project.   
+- Continue development within this managed environment.  
+
+Compared to pip, **uv** is faster, more reliable in resolving dependencies, and includes lockfile support out of the box. This means fewer installation issues, consistent environments across machines, and a smoother workflow overall. In practice, uv feels like “pip without the headaches,” making it an excellent choice for starting and managing Python projects.  
+
+
+# Step 1 - Install uv (once)
+pip install uv
+
+# Step 2 - Initialize a new project and create a clean virtual environment
+uv init myproject
+
+# That created a new directory
+cd myproject
+
+# Create the virtual environment
+uv venv
+
+# Step 3 - Activate the environment
+.venv\Scripts\activate 
+
+# Step 4 - Add the required dependencies (jupyterlab)
+uv add jupyterlab
+
+
+
+
